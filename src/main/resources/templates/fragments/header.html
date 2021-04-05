@@ -1,0 +1,71 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<body>
+<th:block th:fragment="header">
+    <nav class="navbar navbar-inverse navbar-static-top">
+        <div class="container">
+             <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#"><span class="glyphicon glyphicon-gift"></span>Ecommerce Store</a>
+    </div>
+            <div class="collapse navbar-collapse">
+                <ul class="nav navbar-nav">
+                    <li class="active">
+                        <a th:href="@{/}"><span class="glyphicon glyphicon-bell"></span>Home</a>
+                
+                </ul>
+                <ul class="nav navbar-nav">
+                    <li class="active">
+                        <a th:href="@{/product}"><span class="glyphicon glyphicon-fire"></span>Our Products</a>
+                    </li>
+                </ul>
+                
+                 <ul class="nav navbar-nav">
+                    <li class="active">
+                        <a th:href="@{/admin}"><span class="glyphicon glyphicon-fire"></span>Admin Panel</a>
+                    </li>
+                </ul>
+                
+                 <ul class="nav navbar-nav">
+                    <li class="active">
+                        <a th:href="@{/cart}"><span class="glyphicon glyphicon-shopping-cart"></span>Cart</a>
+                    </li>
+                </ul>  
+                 <ul class="nav navbar-nav">
+                    <li class="active">
+                        <a th:href="@{/about}"><span class="glyphicon glyphicon-book"></span>About Us</a>
+                    </li>
+                </ul>  
+                 <ul class="nav navbar-nav">
+                    <li class="active">
+                        <a th:href="@{/contact}"><span class="glyphicon glyphicon-envelope"></span>Contact Us</a>
+                    </li>
+                </ul>
+                 <ul class="nav navbar-nav">
+                    <li class="active">
+                        <a th:href="@{/faq}"><span class="glyphicon glyphicon-plus"></span>FAQ</a>
+                    </li>
+                </ul>
+              <ul class="nav navbar-nav">
+                            <li><a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-log-in"></span> Login / Sign Up <span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a th:href="@{/login}">Login</a></li>
+                                    <li><a th:href="@{/registration}">Sign Up</a></li>
+                                </ul>
+                            </li>
+              </ul>   
+            </div>
+        </div>
+    </nav>
+</th:block>
+</body>
+<!-- Placed at the end of the document so the pages load faster --> 
+ <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</html>

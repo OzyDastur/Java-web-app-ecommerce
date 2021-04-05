@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      xmlns:th="http://www.thymeleaf.org"
+      layout:decorate="~{fragments/layout}">
+<head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/css/lightbox.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/js/lightbox.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.6.2/js/bootstrap-select.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" />
+<link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.6.2/css/bootstrap-select.min.css" rel="stylesheet" />
+<link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!--  Google Fonts -->
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div layout:fragment="content" th:remove="tag">
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+        <li data-target="#myCarousel" data-slide-to="3"></li>
+    <li data-target="#myCarousel" data-slide-to="4"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner">
+    <div class="item active">
+      <img src="https://ei.marketwatch.com/Multimedia/2018/08/01/Photos/ZQ/MW-GN551_iphone_20180801105222_ZQ.jpg?uuid=7ee6305a-959a-11e8-a0be-ac162d7bc1f7" alt="Featured Product 1">
+    </div>
+
+    <div class="item">
+      <img src="https://images.unsplash.com/photo-1524758631624-e2822e304c36?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mnx8ZnVybml0dXJlfGVufDB8fDB8&ixlib=rb-1.2.1&w=1000&q=80" class="img-fluid img-thumbnail" alt="Featured Product 2">
+    </div>
+
+    <div class="item">
+      <img src="https://images.unsplash.com/photo-1470083010285-12169927e64c?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MzZ8fGRyb25lfGVufDB8fDB8&ixlib=rb-1.2.1&w=1000&q=80" class="img-fluid img-thumbnail" alt="Featured Product 3">
+    </div>
+    
+        <div class="item">
+      <img src="https://images.unsplash.com/photo-1527443154391-507e9dc6c5cc?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MXx8Y29tcHV0ZXIlMjBzY3JlZW58ZW58MHx8MHw%3D&ixlib=rb-1.2.1&w=1000&q=80" class="img-fluid img-thumbnail" alt="Featured Product 4">
+    </div>
+
+    <div class="item">
+      <img src="https://images.unsplash.com/photo-1605787020600-b9ebd5df1d07?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MXx8aXBob25lJTIwMTJ8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&w=1000&q=80" alt="Featured Product 5">
+    </div>
+  </div>
+
+  <!-- Left and right controls -->
+  <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#myCarousel" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+
+<div class="container">
+        <div class="row">
+        <div class="gallery col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        </div>
+
+        <div align="center">
+            <button class="btn btn-default filter-button" data-filter="all">All</button>
+            <button class="btn btn-default filter-button" data-filter="computers">Computers</button>
+            <button class="btn btn-default filter-button" data-filter="phones">Phones</button>
+            <button class="btn btn-default filter-button" data-filter="drones">Drones</button>
+            <button class="btn btn-default filter-button" data-filter="furniture">Home Furniture</button>
+        </div>
+        <br/>
+
+
+
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter phones">
+             <div class="hovereffect">
+ 				<img src="https://thesweetsetup.com/wp-content/uploads/2019/09/iVBORw0KGgoAAAANSUhEUgAABaMAAAszCAYAAACIWkB7AAABgmlDQ1BzUkdCIElFQzYxOTY2LTIu-2.jpeg" class="img-responsive">
+        		<div class="overlay">
+           		<center><h3>Phone Product #1</h3></center>
+            	<center><a class="info" th:href="@{/login}">View This Product</a></center>
+        		</div>
+    		</div>
+               
+            </div>
+
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter phones">
+               <div class="hovereffect">
+ 				<img src="https://t3.ftcdn.net/jpg/03/10/40/16/360_F_310401690_S3NY9Xc9dBUWSpJxIydzl4CVBDBEBzYT.jpg" class="img-responsive">
+        		<div class="overlay">
+           		<center><h3>Phone Product #2</h3></center>
+            	<center><a class="info" th:href="@{/login}">View This Product</a></center>
+        		</div>
+    		</div>
+            </div>
+
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter computers">
+              <div class="hovereffect">
+ 				 <img src="https://images.unsplash.com/photo-1527443154391-507e9dc6c5cc?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MXx8Y29tcHV0ZXIlMjBzY3JlZW58ZW58MHx8MHw%3D&ixlib=rb-1.2.1&w=1000&q=80" class="img-responsive">
+        		<div class="overlay">
+           		<center><h3>Computer Product #1</h3></center>
+            	<center><a class="info" th:href="@{/login}">View This Product</a></center>
+        		</div>
+    		</div>
+            </div>
+
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter computers">
+              <div class="hovereffect">
+ 				 <img src="https://i.guim.co.uk/img/static/sys-images/Guardian/Pix/pictures/2015/1/23/1422028722619/a16d454f-faff-4d7b-a0e8-19e45408fc70-1020x612.jpeg?width=445&quality=45&auto=format&fit=max&dpr=2&s=358f1c884bdec5f92e93305aaf709472" class="img-responsive">
+        		<div class="overlay">
+           		<center><h3>Computer Product #2</h3></center>
+            	<center><a class="info" th:href="@{/login}">View This Product</a></center>
+        		</div>
+    		</div>
+            </div>
+
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter phones">
+                <div class="hovereffect">
+ 				  <img src="https://st3.depositphotos.com/2234329/18261/i/600/depositphotos_182617194-stock-photo-perspective-view-new-apple-iphone.jpg" class="img-responsive">
+        		<div class="overlay">
+           		<center><h3>Phone Product #3</h3></center>
+            	<center><a class="info" th:href="@{/login}">View This Product</a></center>
+        		</div>
+    		</div>
+            </div>
+
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter phones">
+                  <div class="hovereffect">
+ 				<img src="https://cdn.wccftech.com/wp-content/uploads/2019/06/iOS-13-wallpaper.png" class="img-responsive">
+        		<div class="overlay">
+           		<center><h3>Phone Product #4</h3></center>
+            	<center><a class="info" th:href="@{/login}">View This Product</a></center>
+        		</div>
+    		</div>
+            </div>
+
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter drones">
+              <div class="hovereffect">
+ 				<img src="https://st.depositphotos.com/1235826/3688/i/600/depositphotos_36884343-stock-photo-drone.jpg" class="img-responsive">
+        		<div class="overlay">
+           		<center><h3>Drone Product #1</h3></center>
+            	<center><a class="info" th:href="@{/login}">View This Product</a></center>
+        		</div>
+    		</div>
+            </div>
+
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter drones">
+             <div class="hovereffect">
+ 				<img src="https://st2.depositphotos.com/4079177/6529/i/600/depositphotos_65298555-stock-photo-flying-drone-with-camera-on.jpg" class="img-responsive">
+        		<div class="overlay">
+           		<center><h3>Drone Product #2</h3></center>
+            	<center><a class="info" href="@{/login}">View This Product</a></center>
+        		</div>
+    		</div>
+            </div>
+
+            <div class="gallery_product col-lg-8 col-md-4 col-sm-4 col-xs-6 filter furniture">
+              <div class="hovereffect">
+ 				<img src="https://thumbs.dreamstime.com/b/urban-jungle-trendy-living-room-interior-white-couch-black-knot-pillow-wooden-furniture-copy-space-empty-wall-174228512.jpg" class="img-responsive">
+        		<div class="overlay">
+           		<center><h3>Furniture Product #1</h3></center>
+            	<center><a class="info" href="@{/login}">View This Product</a></center>
+        		</div>
+    		</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+<script>
+$(document).ready(function(){
+
+    $(".filter-button").click(function(){
+        var value = $(this).attr('data-filter');
+        
+        if(value == "all")
+        {
+            //$('.filter').removeClass('hidden');
+            $('.filter').show('1000');
+        }
+        else
+        {
+//            $('.filter[filter-item="'+value+'"]').removeClass('hidden');
+//            $(".filter").not('.filter[filter-item="'+value+'"]').addClass('hidden');
+            $(".filter").not('.'+value).hide('3000');
+            $('.filter').filter('.'+value).show('3000');
+            
+        }
+    });
+    
+    if ($(".filter-button").removeClass("active")) {
+$(this).removeClass("active");
+}
+$(this).addClass("active");
+
+});
+</script>
+<script>
+$(function(){
+	var	btn = $(".slider__btn");
+	
+	btn.on("click",function(){
+		$(".slider__item").first().clone().appendTo(".slider");
+		$(".slider__image").first().css({transform: "rotateX(-180deg)", opacity: 0});
+		setTimeout(function(){
+			$(".slider__item").first().remove();
+		},200);
+	});
+});
+</script>
+<script>
+jQuery(document).ready(function($) {
+	 
+    $('#myCarousel').carousel({
+            interval: 5000
+    });
+
+    //Handles the carousel thumbnails
+    $('[id^=carousel-selector-]').click(function () {
+    var id_selector = $(this).attr("id");
+    try {
+        var id = /-(\d+)$/.exec(id_selector)[1];
+        console.log(id_selector, id);
+        jQuery('#myCarousel').carousel(parseInt(id));
+    } catch (e) {
+        console.log('Regex failed!', e);
+    }
+});
+    // When the carousel slides, auto update the text
+    $('#myCarousel').on('slid.bs.carousel', function (e) {
+             var id = $('.item.active').data('slide-number');
+            $('#carousel-text').html($('#slide-content-'+id).html());
+    });
+});
+</script>
+<script>
+$(document).ready(function(){
+
+    $(".filter-button").click(function(){
+        var value = $(this).attr('data-filter');
+        
+        if(value == "all")
+        {
+            //$('.filter').removeClass('hidden');
+            $('.filter').show('1000');
+        }
+        else
+        {
+//            $('.filter[filter-item="'+value+'"]').removeClass('hidden');
+//            $(".filter").not('.filter[filter-item="'+value+'"]').addClass('hidden');
+            $(".filter").not('.'+value).hide('3000');
+            $('.filter').filter('.'+value).show('3000');
+            
+        }
+    });
+    
+    if ($(".filter-button").removeClass("active")) {
+$(this).removeClass("active");
+}
+$(this).addClass("active");
+
+});
+</script>
+</body>
+</html>
